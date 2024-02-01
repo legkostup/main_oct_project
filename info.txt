@@ -1,0 +1,7 @@
+Чтобы найти библиотеки, установленные через vcpkg, нужно в файле settings.json (папка .vscode) добавить следующие строки:
+
+{    
+    "cmake.configureArgs": [
+        "-DCMAKE_TOOLCHAIN_FILE=/home/victor/dev/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    ]
+}

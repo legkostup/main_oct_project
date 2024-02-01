@@ -1,7 +1,9 @@
 #include <iostream>
+#include <string>
 
 #include <wx/wx.h>
-
+#include <armadillo>
+#include <ensmallen.hpp>
 
 
 /*  ==========  Main window class  ========= */
@@ -23,7 +25,7 @@ public:
 };
 
 MainWindow::MainWindow()
-    : wxFrame(nullptr, wxID_ANY, "Hello World")
+    : wxFrame(nullptr, wxID_ANY, "Hello World + ")
 {
     wxMenu *menuFile = new wxMenu;
     menuFile->Append(ID_Hello, "&Hello...\tCtrl-H",
